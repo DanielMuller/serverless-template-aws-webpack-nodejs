@@ -8,7 +8,9 @@ custom:
 # Add custom variables here. You can re-use variables defined in the stage yml
 # customStageVar: ${self:custom.stage.customStageVar}
   webpack:
-    includeModules: true
+    includeModules:
+      forceExclude:
+        - aws-sdk
 
 plugins:
   - serverless-webpack
