@@ -1,0 +1,40 @@
+handler: services/hello.handler
+name: ${self:service}-hello # Don't use environment in name. This will fail if your development and production AWS account is the same
+memorySize: ${self:custom.stage.lambda.memorySize} # Overwrites the global lambda config
+timeout: ${self:custom.stage.lambda.timeout} # Overwrites the global lambda config
+## The following are a few example events you can configure
+## NOTE: Please make sure to change your handler code to work with those events
+## Check the event documentation for details
+# events:
+#   - http:
+#       path: users/create
+#       method: get
+#   - s3: ${env:BUCKET}
+#   - schedule: rate(10 minutes)
+#   - sns: greeter-topic
+#   - stream: arn:aws:dynamodb:region:XXXXXX:table/foo/stream/1970-01-01T00:00:00.000
+#   - alexaSkill: amzn1.ask.skill.xx-xx-xx-xx
+#   - alexaSmartHome: amzn1.ask.skill.xx-xx-xx-xx
+#   - iot:
+#       sql: "SELECT * FROM 'some_topic'"
+#   - cloudwatchEvent:
+#       event:
+#         source:
+#           - "aws.ec2"
+#         detail-type:
+#           - "EC2 Instance State-change Notification"
+#         detail:
+#           state:
+#             - pending
+#   - cloudwatchLog: '/aws/lambda/hello'
+#   - cognitoUserPool:
+#       pool: MyUserPool
+#       trigger: PreSignUp
+
+## Define function environment variables here
+# environment:
+#   variable2: value2
+## You can even Cloudformation properties related to the function
+# properties:
+#   logGroup:
+#     RetentionInDays: ${self:custom.stage.lambda.logRetention}

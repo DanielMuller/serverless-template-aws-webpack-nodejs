@@ -1,0 +1,21 @@
+## you can add CloudFormation resource templates here.
+## The resource name is defined by the path and filename of the the yml
+## In this case: S3BucketMyNewBucket
+## This file is identical to define in serverless.yml:
+##
+##resources:
+##  Resources:
+##    S3BucketMyNewBucket:
+##      Type: AWS::S3::Bucket
+##      Properties:
+##        BucketName: my-new-bucket
+#
+# This allows to re-use the resource name in other resources definitions
+
+# Type: AWS::S3::Bucket
+# Properties:
+#   BucketName: my-new-bucket
+# Outputs:
+#  NewOutput:
+#    Description: "Description for the output"
+#    Value: "Some output value"
