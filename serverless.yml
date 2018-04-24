@@ -27,9 +27,8 @@ provider:
   iamRoleStatements: ${file(config/iamRoleStatements.yml)}
   deploymentBucket:
     name: com.serverless.${self:custom.stage.profile}.${self:provider.region}.deploys
-
-environment:
-  SERVERLESS_REGION: ${self:provider.region}
+  environment:
+    SERVERLESS_REGION: ${self:provider.region}
 
 functions: ${file(lib/config.js):functions}
 resources:
