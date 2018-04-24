@@ -25,9 +25,8 @@ provider:
   region: ${opt:region, self:custom.stage.region}
   profile: ${self:custom.stage.profile}
   iamRoleStatements: ${file(config/iamRoleStatements.yml)}
-
-deploymentBucket:
-  name: com.serverless.${self:custom.stage.profile}.${self:provider.region}.deploys
+  deploymentBucket:
+    name: com.serverless.${self:custom.stage.profile}.${self:provider.region}.deploys
 
 environment:
   SERVERLESS_REGION: ${self:provider.region}
