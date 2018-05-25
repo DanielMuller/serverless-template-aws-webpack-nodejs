@@ -33,3 +33,4 @@ provider:
 functions: ${file(lib/config.js):functions}
 resources:
   Resources: ${file(lib/config.js):resources}
+  Outputs: ${file(lib/config.js):outputs}
