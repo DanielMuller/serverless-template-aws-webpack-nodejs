@@ -30,3 +30,14 @@ Run `nvm use` to load the right node version and `npm install` to install all th
 
 ### Webpack
 Webpack will automatically bundle only the used dependencies and create a unique and smaller bundle for each function.
+
+## Logging
+[lambda-log](https://www.npmjs.com/package/lambda-log) provides a more structured way of logging:
+```javascript
+const log = require('lambda-log')
+log.info('Log Tag', {key1: value1, key2: value2})
+```
+Which will result in:
+```
+{"_logLevel":"info","msg":"Log Tag","key1":"value1","key2":"value2","_tags":["log","info"]}
+```
