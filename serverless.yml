@@ -13,6 +13,7 @@ custom:
         - aws-sdk
 
 plugins:
+  - serverless-pseudo-parameters
   - serverless-webpack
 
 package:
