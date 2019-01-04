@@ -41,3 +41,10 @@ Which will result in:
 ```
 {"_logLevel":"info","msg":"Log Tag","key1":"value1","key2":"value2","_tags":["log","info"]}
 ```
+You can also add meta data by default:
+```
+log.options.meta.fct = 'fctName'
+log.options.meta.requestId = event.requestContext.requestId
+log.options.meta.path = event.path
+log.options.meta.sourceIp = event.requestContext.identity.sourceIp
+```
