@@ -1,5 +1,5 @@
-handler: services/hello.handler
-name: ${self:service}-hello # Don't use environment in name. This will fail if your development and production AWS account is the same
+handler: services/foo/bar.handler
+name: ${self:service}-foobar # Don't use environment in name. This will fail if your development and production AWS account is the same
 memorySize: ${self:custom.stage.lambda.memorySize} # Overwrites the global lambda config
 timeout: ${self:custom.stage.lambda.timeout} # Overwrites the global lambda config
 ## The following are a few example events you can configure
