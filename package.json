@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
     "aws-sdk": "^2.504.0",
-    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-source-map-support": "^2.1.1",
     "babel-preset-env": "^1.7.0",
