@@ -7,7 +7,7 @@ The template is for [NodeJS 12.x](https://nodejs.org/) and it uses [webpack plug
 `sls create --template-url https://github.com/DanielMuller/serverless-template-aws-webpack-nodejs/tree/master/ --path my-new-service --name awesome-service`
 
 ### Configuration
-Edit *config/dev.yml* and *config/production.yml* to suit your needs.
+Create and edit *config/dev.yml* and *config/production.yml* to suit your needs.
 
 Run `nvm use` to load the right node version and `npm install` to install all the dependencies.
 
