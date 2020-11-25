@@ -4,7 +4,7 @@ Boilerplate template for [Serverless](https://serverless.com) allowing to easily
 The template is for [NodeJS 12.x](https://nodejs.org/) and it uses [webpack plugin](https://github.com/serverless-heaven/serverless-webpack) to reduce each packaged function.
 
 ## Project creation
-`sls create --template-url https://github.com/Spuul/serverless-template-aws-webpack-nodejs/tree/master/ --path my-new-service --name awesome-service`
+`sls create --template-url https://github.com/DanielMuller/serverless-template-aws-webpack-nodejs/tree/master/ --path my-new-service --name awesome-service`
 
 ### Configuration
 Edit *config/dev.yml* and *config/production.yml* to suit your needs.
