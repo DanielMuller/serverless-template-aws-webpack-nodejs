@@ -14,9 +14,7 @@ custom:
 
 plugins:
   - serverless-deployment-bucket
-  - serverless-pseudo-parameters
   - serverless-webpack
-
 package:
   individually: true
 
