@@ -6,4 +6,4 @@ region: ap-southeast-1 # Replace with your favorite region
 lambda:
   memorySize: 128
   timeout: 10
-  logRetention: "1"
+  logRetention: 1
