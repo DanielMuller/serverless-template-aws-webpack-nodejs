@@ -30,7 +30,7 @@ provider:
   logRetentionInDays: ${self:custom.stage.lambda.logRetention, 1}
   iamRoleStatements: ${file(config/iamRoleStatements.yml)}
   deploymentBucket:
-    name: com.serverless.${self:custom.stage.profile}.${self:provider.region}.deploys
+    name: com.serverless.${self:custom.accountId}.${self:provider.region}.deploys
   environment:
     SERVERLESS_REGION: ${self:provider.region}
 
