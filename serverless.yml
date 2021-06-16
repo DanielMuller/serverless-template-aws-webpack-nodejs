@@ -2,6 +2,7 @@ service: test-updates
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
 frameworkVersion: ">=2.0.0 <3.0.0"
+variablesResolutionMode: 20210326
 
 custom:
   stage: ${file(stages/${self:provider.stage}.yml)}
