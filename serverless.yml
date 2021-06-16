@@ -12,7 +12,7 @@ custom:
     includeModules:
       forceExclude:
         - aws-sdk
-  accountId: ${file(lib/aws.js):getAccountId}
+  accountId: ${file(lib/aws.js):accountId}
 
 plugins:
   - serverless-deployment-bucket
