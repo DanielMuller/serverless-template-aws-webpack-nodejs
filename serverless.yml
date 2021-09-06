@@ -1,7 +1,7 @@
 service: test-updates
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
-frameworkVersion: ">=2.0.0 <3.0.0"
+frameworkVersion: "2.57.0"
 variablesResolutionMode: 20210326
 
 custom:
@@ -38,6 +38,6 @@ provider:
     SERVERLESS_REGION: ${self:provider.region}
 
 functions: ${file(lib/config.js):functions}
-  resources:
-    Resources: ${file(lib/config.js):resources}
-    Outputs: ${file(lib/config.js):outputs}
+resources:
+  Resources: ${file(lib/config.js):resources}
+  Outputs: ${file(lib/config.js):outputs}
