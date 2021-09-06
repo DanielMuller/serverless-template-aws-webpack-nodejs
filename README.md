@@ -1,7 +1,7 @@
 # Functions split
 Boilerplate template for [Serverless](https://serverless.com) allowing to easily separate each function into it's own dedicated file or folder.
 
-The template is for [NodeJS 12.x](https://nodejs.org/) and it uses [webpack plugin](https://github.com/serverless-heaven/serverless-webpack) to reduce each packaged function.
+The template is for [NodeJS 14.x](https://nodejs.org/) and it uses [webpack plugin](https://github.com/serverless-heaven/serverless-webpack) to reduce each packaged function.
 
 ## Project creation
 `sls create --template-url https://github.com/DanielMuller/serverless-template-aws-webpack-nodejs/tree/master/ --path my-new-service --name awesome-service`
