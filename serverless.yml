@@ -1,13 +1,12 @@
 service: test-updates
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
-frameworkVersion: "2.57.0"
-variablesResolutionMode: 20210326
+frameworkVersion: "3.24.1"
 
 custom:
   stage: ${file(stages/${self:provider.stage}.yml)}
-# Add custom variables here. You can re-use variables defined in the stage yml
-# customStageVar: ${self:custom.stage.customStageVar}
+  # Add custom variables here. You can re-use variables defined in the stage yml
+  # customStageVar: ${self:custom.stage.customStageVar}
   webpack:
     includeModules:
       forceExclude:
@@ -28,9 +27,8 @@ provider:
   profile: ${self:custom.stage.profile}
   memorySize: ${self:custom.stage.lambda.memorySize, '128'}
   timeout: ${self:custom.stage.lambda.timeout, '10'}
-  lambdaHashingVersion: 20201221
   logRetentionInDays: ${self:custom.stage.lambda.logRetention, 1}
-  iamRoleStatements: ${file(config/iamRoleStatements.yml)}
+  # iamRoleStatements: ${file(config/iamRoleStatements.yml)}
   deploymentBucket:
     name: com.serverless.${self:custom.accountId}.${self:provider.region}.deploys
     blockPublicAccess: true
