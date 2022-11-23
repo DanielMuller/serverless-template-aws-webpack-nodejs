@@ -1,3 +1,5 @@
+role:
+  statements:
 # you can add statements to the Lambda function's IAM Role here
 #  - Effect: "Allow"
 #    Action:

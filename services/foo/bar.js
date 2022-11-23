@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports.handler = (event, context, callback) => {
+export const handler = async (event) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
@@ -9,7 +9,7 @@ module.exports.handler = (event, context, callback) => {
     })
   }
 
-  callback(null, response)
+  return response
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
   // callback(null, { message: 'Go Serverless v1.0! Your function executed successfully!', event });

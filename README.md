@@ -1,7 +1,7 @@
 # Functions split
 Boilerplate template for [Serverless](https://serverless.com) allowing to easily separate each function into it's own dedicated file or folder.
 
-The template is for [NodeJS 14.x](https://nodejs.org/) and it uses [webpack plugin](https://github.com/serverless-heaven/serverless-webpack) to reduce each packaged function.
+The template is for [NodeJS 18.x](https://nodejs.org/) and it uses [webpack plugin](https://github.com/serverless-heaven/serverless-webpack) to reduce each packaged function.
 
 ## Project creation
 `sls create --template-url https://github.com/DanielMuller/serverless-template-aws-webpack-nodejs/tree/master/ --path my-new-service --name awesome-service`
@@ -12,17 +12,17 @@ Create and edit *config/dev.yml* and *config/production.yml* to suit your needs.
 Run `nvm use` to load the right node version and `npm install` to install all the dependencies.
 
 ## File structure
-- **events/**  
+- **events/**
   Store all events related to testing
-- **lib/config.js**  
+- **lib/config.js**
   Javascript module to build serverless.yml
-- **resources/**  
+- **resources/**
   Contains yml files describing each resource. Definitions can be nested 2 levels deep, in a subfolder describing the AWS resource, like `IamRole/specificServiceRole.yml`.
   The folder name is expected to follow [Serverless convention](https://serverless.com/framework/docs/providers/aws/guide/resources#aws-cloudformation-resource-reference) for naming.
-- **services/**  
+- **services/**
   Contains each individual Lambda function (.js) and it's definitions (.yml).
   In addition to the usual *handler* and *event* definitions, the yml can also hold a specific *resource* definition related to the function, without the need for an entry in the *resources/* folder.
-- **stages/**  
+- **stages/**
   Stage specific configurations.
 
 ## Deploy
