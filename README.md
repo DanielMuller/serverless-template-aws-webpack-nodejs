@@ -1,3 +1,7 @@
+> [!NOTE]
+> This project has been archived in favor of [serverless-template-aws-webpack-typescript](https://github.com/DanielMuller/serverless-template-aws-webpack-typescript)
+>
+
 # Functions split
 Boilerplate template for [Serverless](https://serverless.com) allowing to easily separate each function into it's own dedicated file or folder.
 
